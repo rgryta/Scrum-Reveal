@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Scrum Reveal",
+  "version": "1.0",
+  "description": "Always display hidden side of the Scrum Poker cards.",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.scrumpoker-online.org/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
